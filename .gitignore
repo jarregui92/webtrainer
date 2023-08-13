@@ -1,6 +1,6 @@
 # Dependencias instaladas por npm o yarn
 /node_modules
-/Finak.rar
+/Final.rar
 
 # Archivos de caché o registros generados por npm
 npm-debug.log*
