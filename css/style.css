@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*COLORS*/
 /*FONTS*/
 /*RESETS*/
@@ -36,58 +35,10 @@
         border: 3px solid #095E7E;
         padding: 5px; }
   .header .headerContent {
-=======
-@font-face {
-    font-family: 'PoetsenOne'; /* Nombre de la fuente */
-    src: url('../assets/fonts/PoetsenOne-Regular.ttf') format('truetype'); /* Ruta al archivo de la fuente */
-
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
-/* HEADER CLASSES */
-.header{
-    font-family: 'PoetsenOne';
-    background: url('../assets/images/banner.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-}
-
-.headerNav{
-    padding-top: 25px;
-}
-
-.headerNav ul{
-    display: flex;
-    justify-content:space-evenly;
-    list-style: none;
-}
-
-.headerNav ul li a {
-    color: white;
-    font-size: 20px;
-    font-weight: 200px;
-    text-decoration: none;
-}
-
-.active{
-    border: 3px solid #095E7E;
-    padding: 5px;
-}
-
-.headerContent{
->>>>>>> 85105e1b17b2047a4b5e40e282d0db25f4f80b52
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     justify-content: space-evenly; }
     .header .headerContent h1 {
       color: #fff;
@@ -121,50 +72,6 @@
     margin-top: 20px;
     font-size: 1.2rem; }
   .sectionPlanes .cardContainer {
-=======
-    justify-content: space-evenly;
-}
-
-.headerContent h1 {
-    color: #fff;
-}
-
-.btnContactanos{
-    font-family: 'PoetsenOne';
-    background: #095E7E;
-    border: 2px solid rgba(0,0,0,0.8);
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-    width: 30%;
-    height: 40px;
-    border-radius: 50px;
-    color: #fff;
-}
-
-.btnContactanos a{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 200px;
-    text-decoration: none;
-}
-
-/* PLANES CLASSES */
-.sectionPlanes{
-    font-family: 'PoetsenOne';
-    background-color: #181529;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionPlanes h2{
-    color: #fff;
-    margin-top: 20px;
-    font-size: 2rem;
-}
-
-.cardContainer{
->>>>>>> 85105e1b17b2047a4b5e40e282d0db25f4f80b52
     padding: 50px 0px 50px 0px;
     height: 80%;
     width: 100%;
@@ -172,7 +79,6 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     place-items: center; }
     .sectionPlanes .cardContainer .card:nth-child(1) .cardHeader {
       background-image: url("../assets/images/planActiveLite.jpg"); }
@@ -357,151 +263,11 @@
         margin: 20px; }
   .sectionEntrenamientoLibre .principal {
     background-image: url("../assets/images/planActiveProBig.jpg");
-=======
-    place-items: center;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    width: 30vw;
-    height: 100%;
-    border-radius: 19px 19px 19px 19px;
-    text-align: center;
-}
-.cardHeader{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: 'Arial';
-    border-radius: 19px 19px 0px 0px;
-    background-position: center;
-    background-size: cover;
-}
-
-@media screen and (max-width: 375px) {
-    .cardContainer{
-        grid-template-columns: 1fr;
-    }
-
-    .card{
-        width: 80vw;
-    }
-
-  }
-
-
-
-
-.card:nth-child(1) .cardHeader{
-    background-image: url('../assets/images/planActiveLite.jpg');
-}
-
-.card:nth-child(2) .cardHeader{
-    background-image: url('../assets/images/planActivePro.jpg');
-}
-
-.card:nth-child(3) .cardHeader{
-    background-image: url('../assets/images/planElite.jpg');
-}
-
-.cardBody{
-    position: relative;
-    font-family: 'Arial';
-    background-color: #f9f9f9;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0px 0px 19px 19px;
-}
-
-.cardBody .btnMensualidad{
-    position: absolute;
-    font-family: 'Arial';
-    box-sizing: border-box;
-    background: #095E7E;
-    border: 2px solid rgba(0,0,0,0.2);
-    box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
-    top: -1.25rem;
-    width: 50%;
-    height: 45px;
-    border-radius: 50px;
-    color: #fff;
-}
-
-.cardBody ul{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 70%;
-}
-
-.cardBody ul li{
-    padding: 10px 0px;
-}
-.btnObtenerPlanLink{
-    width: 50%;
-}
-
-.btnObtenerPlan{
-    font-family: 'Arial';
-    box-sizing: border-box;
-    background: #095E7E;
-    border: 2px solid rgba(0,0,0,0.2);
-    box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
-    width: 100%;
-    height: 35px;
-    border-radius: 50px;
-    color: #fff;
-    margin: 8px;
-    cursor: pointer;
-}
-
-/*ENTRENAMIENTO LIBRE CLASSES*/
-.sectionEntrenamientoLibre{
-    width: 100%;
-    display: flex;
-    height: fit-content;
-    background-color: #181529;
-    color: #fff;
-}
-
-.sectionEntrenamientoLibre .aside{
-    width: 20vw;
-    height: 100%;
-}
-
-.sectionEntrenamientoLibre .aside ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    font-size: 1.8rem;
-    font-family: 'PoetsenOne';
-}
-
-.sectionEntrenamientoLibre .aside ul li{
-    margin: 20px;
-}
-
-.sectionEntrenamientoLibre .principal{
-    background-image: url('../assets/images/planActiveProBig.jpg');
->>>>>>> 85105e1b17b2047a4b5e40e282d0db25f4f80b52
     background-position: center;
     background-size: cover;
     width: 100%;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center; }
     .sectionEntrenamientoLibre .principal .principalBox {
       display: flex;
@@ -641,208 +407,10 @@
   flex-direction: column;
   align-items: center; }
   .sectionShop .cardShopContainer {
-=======
-    align-items: center;
-}
-
-.sectionEntrenamientoLibre .principal .principalBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(24, 21, 41, 0.8);
-    border-radius: 20px;
-    height: fit-content;
-    width: 50vw;
-    font-family: 'PoetsenOne';
-}
-
-.sectionEntrenamientoLibre .principal .principalBox h2{
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    font-size: 2.3rem;
-}
-
-.sectionEntrenamientoLibre .principal .principalBox ul{
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    font-size: 1.4rem;
-    list-style: none;
-}
-
-.sectionEntrenamientoLibre .principal .principalBox ul li{
-    margin: 1.25rem;
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionEntrenamientoLibre .principal .principalBox ul li .arrowIcon{
-    font-size: 3rem;
-    margin-right: 2rem;
-}
-
-/*FOOTER CLASSES*/
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0px;
-    background-color: #181529;
-    color: #fff;
-    font-family: "PoetsenOne";
-    height: 70px;
-    font-size: 1.5rem;
-}
-
-/* PAGES PLANES CSS*/
-
-.planLeft{
-    background-color: #181529;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.planRight{
-    background-color: #181529;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.infoSide{
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-} 
-
-.infoSide ul{
-    list-style: none;
-}
-.imageSide img{
-    width: 40vw;
-    height: 400;
-}
-
-/*NOSOTROS PAGE*/
-.sectionDescription{
-    font-family: 'PoetsenOne';
-    background-color: #181529;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionDescription h2{
-    color: #fff;
-    margin-top: 20px;
-    font-size: 2rem;
-    margin: 10px;
-}
-
-.sectionDescription p{
-    color:white;
-    margin: 10px;
-    text-align: center;
-
-}
-
-/* CONTATO PAGE */
-.sectionForm{
-    font-family: 'PoetsenOne';
-    background-color: #181529;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionForm .formContainer form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px 20px 0px;
-    color: white;
-}
-
-.sectionForm .formContainer form fieldset{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0px 20px 0px;
-    color: white;
-    width: 100%;
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-}
-
-.sectionForm .formContainer input{
-    background-color: rgba(9, 95, 126, 0.504);
-    height: 40px;
-    padding-left: 10px;
-    border-radius: 14px;    
-    margin: 10px 0px 10px 0;
-    border: 0px;
-    color: white;
-    width: 100%;
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-}
-
-.sectionForm .formContainer fieldset label{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.sectionForm .formContainer textarea{
-    background-color: rgba(9, 95, 126, 0.504);
-    padding-left: 10px;
-    border-radius: 14px;    
-    margin: 10px 0px 10px 0;
-    border: 0px;
-    color: white;
-    width: 100%;
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-}
-
-.sectionForm .formContainer input[type="radio"]{
-    width: 20px;
-}
-
-.sectionForm .formContainer input::placeholder{
-    color: white;
-}
-
-.sectionForm .formContainer textarea::placeholder{
-    color: white;
-}
-
-.sectionForm .formContainer form button{
-    cursor: pointer;
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-}
-
-/*SHOP PAGES*/
-.sectionShop{
-    font-family: 'PoetsenOne';
-    background-color: #181529;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionShop .cardShopContainer{
->>>>>>> 85105e1b17b2047a4b5e40e282d0db25f4f80b52
     padding: 50px 0px 50px 0px;
     height: 80%;
     width: 100%;
     display: flex;
-<<<<<<< HEAD
     justify-content: space-evenly; }
     .sectionShop .cardShopContainer .cardShop {
       display: flex;
@@ -900,54 +468,3 @@
   height: 50px; }
   .footer p {
     font-size: 0.8rem; }
-=======
-    justify-content:space-evenly;
-}
-
-.sectionShop .cardShopContainer .cardShop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    width: 20vw;
-    height: 100%;
-    border-radius: 5px 5px 5px 5px;
-}
-
-.sectionShop .cardShopContainer .cardShop img{
-    width: 100%;
-    max-height: 300px;
-}
-
-.sectionShop .cardShopContainer .cardShop .cardShopDescription{
-    width: 100%;
-    background-color: rgba(9, 95, 126, 0.412);
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-.sectionShop .cardShopContainer .cardShop a{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 200px;
-    text-decoration: none;
-    width: 100%;
-    margin: 10px 0px 10px 0;
-}
-
-.sectionShop .cardShopContainer .cardShop a button{
-    font-family: 'PoetsenOne';
-    background: #095E7E;
-    border: 2px solid rgba(0,0,0,0.8);
-    box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
-    width: 100%;
-    height: 40px;
-    color: #fff;
-    bottom: 0px;
-    cursor: pointer;
-}
->>>>>>> 85105e1b17b2047a4b5e40e282d0db25f4f80b52
