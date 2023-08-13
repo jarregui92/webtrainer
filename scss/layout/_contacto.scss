@@ -1,0 +1,78 @@
+
+.sectionForm{
+    font-family: 'PoetsenOne';
+    background-color: #181529;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .formContainer form{
+        @include flexDisplay(flex, column ,center, center);
+        margin: 20px 0px 20px 0px;
+        color: white;
+        input{
+            background-color: rgba(9, 95, 126, 0.504);
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 14px;    
+            margin: 10px 0px 10px 0;
+            border: 0px;
+            color: white;
+            width: 100%;
+            box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
+        }
+        input[type="radio"]{
+            width: 20px;
+        }
+        input::placeholder{
+            color: white;
+        }
+        fieldset{
+            @include flexDisplay(flex, row ,center, center);
+            margin: 20px 0px 20px 0px;
+            color: white;
+            width: 100%;
+            box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
+            label{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+            }
+        }
+        textarea{
+            background-color: rgba(9, 95, 126, 0.504);
+            padding-left: 10px;
+            border-radius: 14px;    
+            margin: 10px 0px 10px 0;
+            border: 0px;
+            color: white;
+            width: 100%;
+            box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
+        }
+        textarea::placeholder{
+            color: white;
+        }
+        button{
+            cursor: pointer;
+            box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
+        }
+        .btnContactanos{
+            font-family: 'PoetsenOne';
+            background: #095E7E;
+            border: 2px solid rgba(0,0,0,0.8);
+            box-shadow: 8px 15px 4px -8px rgba(0,0,0,0.49);
+            width: 30%;
+            height: 40px;
+            border-radius: 50px;
+            color: #fff;
+        }
+        
+        .btnContactanos a{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 200px;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,470 @@
+/*COLORS*/
+/*FONTS*/
+/*RESETS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+@font-face {
+  font-family: 'PoetsenOne';
+  /* Nombre de la fuente */
+  src: url("../assets/fonts/PoetsenOne-Regular.ttf") format("truetype");
+  /* Ruta al archivo de la fuente */ }
+
+/*HEADER STYLES*/
+.header {
+  font-family: 'PoetsenOne';
+  background: url("../assets/images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%; }
+  .header .headerNav {
+    padding-top: 25px; }
+    .header .headerNav ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none; }
+      .header .headerNav ul li a {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 200px;
+        text-decoration: none; }
+      .header .headerNav ul .active {
+        border: 3px solid #095E7E;
+        padding: 5px; }
+  .header .headerContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .header .headerContent h1 {
+      color: #fff;
+      font-size: 1.5rem; }
+    .header .headerContent .btnContactanos {
+      font-family: 'PoetsenOne';
+      background: #095E7E;
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49);
+      width: 30%;
+      height: 40px;
+      border-radius: 50px;
+      color: #fff; }
+      .header .headerContent .btnContactanos a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 200px;
+        text-decoration: none; }
+
+/*FIN HEADER STYLES*/
+/* PLANES CLASSES */
+.sectionPlanes {
+  font-family: 'PoetsenOne';
+  background-color: #181529;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionPlanes h2 {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.2rem; }
+  .sectionPlanes .cardContainer {
+    padding: 50px 0px 50px 0px;
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    place-items: center; }
+    .sectionPlanes .cardContainer .card:nth-child(1) .cardHeader {
+      background-image: url("../assets/images/planActiveLite.jpg"); }
+    .sectionPlanes .cardContainer .card:nth-child(2) .cardHeader {
+      background-image: url("../assets/images/planActivePro.jpg"); }
+    .sectionPlanes .cardContainer .card:nth-child(3) .cardHeader {
+      background-image: url("../assets/images/planElite.jpg"); }
+    .sectionPlanes .cardContainer .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 30vw;
+      height: 100%;
+      border-radius: 19px 19px 19px 19px;
+      text-align: center; }
+      .sectionPlanes .cardContainer .card .cardHeader {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: 'Arial';
+        border-radius: 19px 19px 0px 0px;
+        background-position: center;
+        background-size: cover; }
+      .sectionPlanes .cardContainer .card .cardBody {
+        position: relative;
+        font-family: 'Arial';
+        background-color: #f9f9f9;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 0px 0px 19px 19px; }
+        .sectionPlanes .cardContainer .card .cardBody .btnMensualidad {
+          position: absolute;
+          font-family: 'Arial';
+          box-sizing: border-box;
+          background: #095E7E;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 15px 4px -8px rgba(0, 0, 0, 0.49);
+          top: -1.25rem;
+          width: 50%;
+          height: 45px;
+          border-radius: 50px;
+          color: #fff; }
+          .sectionPlanes .cardContainer .card .cardBody .btnMensualidad h3 {
+            font-size: 1rem; }
+          .sectionPlanes .cardContainer .card .cardBody .btnMensualidad h4 {
+            font-size: 0.8rem; }
+          .sectionPlanes .cardContainer .card .cardBody .btnMensualidad p {
+            font-size: 0.8rem; }
+        .sectionPlanes .cardContainer .card .cardBody ul {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          width: 70%; }
+          .sectionPlanes .cardContainer .card .cardBody ul li {
+            padding: 10px 0px; }
+            .sectionPlanes .cardContainer .card .cardBody ul li p {
+              font-size: 0.8rem;
+              text-align: left; }
+        .sectionPlanes .cardContainer .card .cardBody .btnObtenerPlanLink {
+          width: 50%; }
+        .sectionPlanes .cardContainer .card .cardBody .btnObtenerPlan {
+          font-family: 'Arial';
+          box-sizing: border-box;
+          background: #095E7E;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 15px 4px -8px rgba(0, 0, 0, 0.49);
+          width: 100%;
+          height: 35px;
+          border-radius: 50px;
+          color: #fff;
+          margin: 8px;
+          cursor: pointer; }
+  @media (max-width: 600px) {
+    .sectionPlanes .cardContainer {
+      grid-template-columns: 1fr;
+      gap: 20px; }
+      .sectionPlanes .cardContainer .card {
+        width: 50vw; } }
+  @media (max-width: 400px) {
+    .sectionPlanes .cardContainer {
+      grid-template-columns: 1fr;
+      gap: 20px; }
+      .sectionPlanes .cardContainer .card {
+        width: 70vw; } }
+
+/*PAGE PLANES*/
+.planLeft {
+  background-color: #181529;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .planLeft .infoSide {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content; }
+    .planLeft .infoSide .infoSide ul {
+      list-style: none; }
+    .planLeft .infoSide .btnObtenerPlanLink {
+      width: 50%; }
+    .planLeft .infoSide .btnObtenerPlan {
+      font-family: 'Arial';
+      box-sizing: border-box;
+      background: #095E7E;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 5px 15px 4px -8px rgba(0, 0, 0, 0.49);
+      width: 100%;
+      height: 35px;
+      border-radius: 50px;
+      color: #fff;
+      margin: 8px;
+      cursor: pointer; }
+  .planLeft .imageSide img {
+    width: 40vw;
+    height: 400; }
+  @media (max-width: 400px) {
+    .planLeft .imageSide {
+      display: none; } }
+
+.planRight {
+  background-color: #181529;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .planRight .infoSide {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content; }
+    .planRight .infoSide .infoSide ul {
+      list-style: none; }
+    .planRight .infoSide .btnObtenerPlanLink {
+      width: 50%; }
+    .planRight .infoSide .btnObtenerPlan {
+      font-family: 'Arial';
+      box-sizing: border-box;
+      background: #095E7E;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 5px 15px 4px -8px rgba(0, 0, 0, 0.49);
+      width: 100%;
+      height: 35px;
+      border-radius: 50px;
+      color: #fff;
+      margin: 8px;
+      cursor: pointer; }
+  .planRight .imageSide img {
+    width: 40vw;
+    height: 400; }
+  @media (max-width: 400px) {
+    .planRight .imageSide {
+      display: none; } }
+
+/*ENTRENAMIENTO LIBRE CLASSES*/
+.sectionEntrenamientoLibre {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  background-color: #181529;
+  color: #fff; }
+  .sectionEntrenamientoLibre .aside {
+    width: 20vw;
+    height: 100%; }
+    .sectionEntrenamientoLibre .aside ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      font-size: 1rem;
+      font-family: 'PoetsenOne'; }
+      .sectionEntrenamientoLibre .aside ul li {
+        margin: 20px; }
+  .sectionEntrenamientoLibre .principal {
+    background-image: url("../assets/images/planActiveProBig.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sectionEntrenamientoLibre .principal .principalBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(24, 21, 41, 0.8);
+      border-radius: 20px;
+      height: fit-content;
+      width: 50vw;
+      font-family: 'PoetsenOne'; }
+      .sectionEntrenamientoLibre .principal .principalBox h2 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.2rem; }
+      .sectionEntrenamientoLibre .principal .principalBox ul {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        list-style: none; }
+        .sectionEntrenamientoLibre .principal .principalBox ul li {
+          margin: 1.25rem;
+          font-size: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .sectionEntrenamientoLibre .principal .principalBox ul li .arrowIcon {
+            font-size: 3rem;
+            margin-right: 2rem; }
+
+.sectionDescription {
+  font-family: 'PoetsenOne';
+  background-color: #181529;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionDescription h2 {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 2rem;
+    margin: 10px; }
+  .sectionDescription p {
+    color: white;
+    margin: 10px;
+    text-align: center; }
+  .sectionDescription .btnContactanos {
+    font-family: 'PoetsenOne';
+    background: #095E7E;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49);
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;
+    color: #fff; }
+  .sectionDescription .btnContactanos a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 200px;
+    text-decoration: none; }
+
+.sectionForm {
+  font-family: 'PoetsenOne';
+  background-color: #181529;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionForm .formContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    color: white; }
+    .sectionForm .formContainer form input {
+      background-color: rgba(9, 95, 126, 0.504);
+      height: 40px;
+      padding-left: 10px;
+      border-radius: 14px;
+      margin: 10px 0px 10px 0;
+      border: 0px;
+      color: white;
+      width: 100%;
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49); }
+    .sectionForm .formContainer form input[type="radio"] {
+      width: 20px; }
+    .sectionForm .formContainer form input::placeholder {
+      color: white; }
+    .sectionForm .formContainer form fieldset {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0px 20px 0px;
+      color: white;
+      width: 100%;
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49); }
+      .sectionForm .formContainer form fieldset label {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%; }
+    .sectionForm .formContainer form textarea {
+      background-color: rgba(9, 95, 126, 0.504);
+      padding-left: 10px;
+      border-radius: 14px;
+      margin: 10px 0px 10px 0;
+      border: 0px;
+      color: white;
+      width: 100%;
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49); }
+    .sectionForm .formContainer form textarea::placeholder {
+      color: white; }
+    .sectionForm .formContainer form button {
+      cursor: pointer;
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49); }
+    .sectionForm .formContainer form .btnContactanos {
+      font-family: 'PoetsenOne';
+      background: #095E7E;
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49);
+      width: 30%;
+      height: 40px;
+      border-radius: 50px;
+      color: #fff; }
+    .sectionForm .formContainer form .btnContactanos a {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 200px;
+      text-decoration: none; }
+
+.sectionShop {
+  font-family: 'PoetsenOne';
+  background-color: #181529;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionShop .cardShopContainer {
+    padding: 50px 0px 50px 0px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    .sectionShop .cardShopContainer .cardShop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 20vw;
+      height: 100%;
+      border-radius: 5px 5px 5px 5px; }
+      .sectionShop .cardShopContainer .cardShop img {
+        width: 100%;
+        max-height: 300px; }
+      .sectionShop .cardShopContainer .cardShop .cardShopDescription {
+        width: 100%;
+        background-color: rgba(9, 95, 126, 0.412);
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center; }
+      .sectionShop .cardShopContainer .cardShop a {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 200px;
+        text-decoration: none;
+        width: 100%;
+        margin: 10px 0px 10px 0; }
+        .sectionShop .cardShopContainer .cardShop a button {
+          font-family: 'PoetsenOne';
+          background: #095E7E;
+          border: 2px solid rgba(0, 0, 0, 0.8);
+          box-shadow: 8px 15px 4px -8px rgba(0, 0, 0, 0.49);
+          width: 100%;
+          height: 40px;
+          color: #fff;
+          bottom: 0px;
+          cursor: pointer; }
+  @media (max-width: 400px) {
+    .sectionShop .cardShopContainer {
+      flex-direction: column;
+      align-items: center; }
+      .sectionShop .cardShopContainer .cardShop {
+        width: 50vw;
+        margin: 10px; } }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  background-color: #181529;
+  color: #fff;
+  font-family: "PoetsenOne";
+  height: 50px; }
+  .footer p {
+    font-size: 0.8rem; }

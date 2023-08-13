@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    background-color: $background-color;
+    color: #fff;
+    font-family: "PoetsenOne";
+    height: 50px;
+    p{
+        font-size: $p-text;
+    }
+}

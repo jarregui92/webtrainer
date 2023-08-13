@@ -1,0 +1,234 @@
+/* PLANES CLASSES */
+.sectionPlanes {
+    font-family: 'PoetsenOne';
+    background-color: $background-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: #fff;
+        margin-top: 20px;
+        font-size: $h2;
+    }
+
+    .cardContainer {
+        padding: 50px 0px 50px 0px;
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+
+        
+        .card:nth-child(1) .cardHeader{
+            background-image: url('../assets/images/planActiveLite.jpg');
+        }
+
+        .card:nth-child(2) .cardHeader{
+            background-image: url('../assets/images/planActivePro.jpg');
+        }
+        
+        .card:nth-child(3) .cardHeader{
+            background-image: url('../assets/images/planElite.jpg');
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            width: 30vw;
+            height: 100%;
+            border-radius: 19px 19px 19px 19px;
+            text-align: center;            
+            
+            .cardHeader {
+                height: 10vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-family: 'Arial';
+                border-radius: 19px 19px 0px 0px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .cardBody{
+                position: relative;
+                font-family: 'Arial';
+                background-color: #f9f9f9;
+                height: 300px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 0px 0px 19px 19px;
+                .btnMensualidad{
+                    position: absolute;
+                    font-family: 'Arial';
+                    box-sizing: border-box;
+                    background: $color-primary;
+                    border: 2px solid rgba(0,0,0,0.2);
+                    box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
+                    top: -1.25rem;
+                    width: 50%;
+                    height: 45px;
+                    border-radius: 50px;
+                    color: #fff;
+                    h3{
+                        font-size: $h3;
+                    }
+                    h4{
+                        font-size: $h4;
+                    }
+                    p{
+                        font-size: $p-text;
+                    }
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 70%;
+                    li{
+                        padding: 10px 0px;
+                        p{
+                            font-size: $p-text;
+                            text-align: left;
+                        }
+                    }
+                }
+                .btnObtenerPlanLink{
+                    width: 50%;
+                }
+                .btnObtenerPlan{
+                    font-family: 'Arial';
+                    box-sizing: border-box;
+                    background: $color-primary;
+                    border: 2px solid rgba(0,0,0,0.2);
+                    box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
+                    width: 100%;
+                    height: 35px;
+                    border-radius: 50px;
+                    color: #fff;
+                    margin: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .cardContainer {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            .card {
+                width: 50vw;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .cardContainer {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            .card {
+                width: 70vw;
+            }
+        }
+    }
+}
+
+
+/*PAGE PLANES*/
+.planLeft{
+    background-color: #181529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .infoSide{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        .infoSide ul{
+            list-style: none;
+        }
+        .btnObtenerPlanLink{
+            width: 50%;
+        }
+        .btnObtenerPlan{
+            font-family: 'Arial';
+            box-sizing: border-box;
+            background: $color-primary;
+            border: 2px solid rgba(0,0,0,0.2);
+            box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
+            width: 100%;
+            height: 35px;
+            border-radius: 50px;
+            color: #fff;
+            margin: 8px;
+            cursor: pointer;
+        }
+    }
+    .imageSide img{
+        width: 40vw;
+        height: 400;
+    }
+    @media (max-width: 400px) {
+        .imageSide {
+            display: none;
+        }
+    }
+}
+
+.planRight{
+    background-color: #181529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .infoSide{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        .infoSide ul{
+            list-style: none;
+        }
+        .btnObtenerPlanLink{
+            width: 50%;
+        }
+        .btnObtenerPlan{
+            font-family: 'Arial';
+            box-sizing: border-box;
+            background: $color-primary;
+            border: 2px solid rgba(0,0,0,0.2);
+            box-shadow: 5px 15px 4px -8px rgba(0,0,0,0.49);
+            width: 100%;
+            height: 35px;
+            border-radius: 50px;
+            color: #fff;
+            margin: 8px;
+            cursor: pointer;
+        }
+    }
+    .imageSide img{
+        width: 40vw;
+        height: 400;
+    }
+    @media (max-width: 400px) {
+        .imageSide {
+            display: none;
+        }
+    }
+}
